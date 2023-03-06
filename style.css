@@ -118,12 +118,22 @@ main {
   color: hsl(31, 77%, 52%);
 }
 
+.card:nth-child(1) button:hover {
+  background-color: hsl(31, 77%, 52%);
+  color: hsl(0, 0%, 95%);
+}
+
 .card:nth-child(2) {
   background-color: hsl(184, 100%, 22%);
 }
 
 .card:nth-child(2) button {
   color: hsl(184, 100%, 22%);
+}
+
+.card:nth-child(2) button:hover {
+  background-color: hsl(184, 100%, 22%);
+  color: hsl(0, 0%, 95%);
 }
 
 .card:nth-child(3) {
@@ -135,11 +145,49 @@ main {
   color: hsl(179, 100%, 13%);
 }
 
+.card:nth-child(3) button:hover {
+  background-color: hsl(179, 100%, 13%);
+  color: hsl(0, 0%, 95%);
+}
+
 button {
   background-color: hsl(0, 0%, 95%);
+  border: 0.15rem solid hsl(0, 0%, 95%);
   padding: 0.75rem 0;
-  border: none;
   border-radius: 3rem;
   margin-top: 3rem;
   max-width: 9rem;
+}
+
+button:hover {
+  border: 0.15rem solid hsl(0, 0%, 95%);
+
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    padding-bottom: 2rem;
+  }
+
+  main {
+    margin-top: 3rem;
+    flex-direction: column;
+  }
+
+  .card {
+    min-width: 20rem;
+  }
+
+  .card:nth-child(1) {
+    border-radius: 0.75rem 0.75rem 0 0;
+  }
+
+  .card:nth-child(3) {
+    border-radius: 0 0 0.75rem 0.75rem;
+  }
+
+  button {
+    margin-top: 0;
+  }
 }
