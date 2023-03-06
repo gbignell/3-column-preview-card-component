@@ -44,6 +44,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background-color: hsl(0, 0%, 95%);
 }
 
 /* A elements that don't have a class get default styles */
